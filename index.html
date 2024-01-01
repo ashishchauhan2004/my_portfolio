@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    
+</head>
+<body>
+
+<!-- Home section -->
+
+<div class="home" id="Home">
+    <div class="left">
+            <div class="nav">
+                <ul>
+                    <li class="navlist"><a href="#Home"><b>Home</b></a></li>
+                    <li class="navlist"><a href="#About"><b>About</b></a></li>
+                    <li class="navlist"><a href="#Services"><b>Services</b></a></li>
+                    <li class="navlist"><a href="#Projects"><b>Projects</b></a></li>
+                    <li class="navlist"><a href="#Contact"><b>Contact</b></a></li>
+                </ul>
+            </div>
+            <div class="text-container">
+                <p class="hello">Hello</p><br>
+                <h1 class="h1">I'm Ashish </h1><br>
+                <h2 class="h6">Front end Developer <br>& Web designer</h2><br>
+                <button class="btn"><b>HIRE ME</b></button>
+            </div>
+    </div>
+    
+        <div class="right">
+        </div>
+    </div>
+    <img src="img/main_img.png" alt="my image" class="overlay-image">
+ </div>
+
+    <!-- About section -->
+
+    <div class="about" id="About">
+        
+        <img src="img/main_img.png" alt="my image" class="about-img">
+        <h1 class="about-h1">About</h1>
+        <p class="about-p"><b>My name is Ashish Chauhan. I study in Shree K.J Polytechnic Bharuch. <br>Currently i am in 5th semester of Computer Engineering in<br> Diploma. I done my internship in Front end Web Development Using <br>HTML and CSS.</b></p>
+        <button class="CV-btn"><b>DOWNLOAD CV</b></button>
+    </div>
+
+    <!-- service sectuon -->
+
+    <div class="services" id="Services">
+        <h1 class="services-h1">Services</h1>
+        <div class="main-box">
+        <div class="box1"><h5 class="h5">UI / UX Research</h5></div>
+        <div class="box2"><h5 class="h5">Web Development</h5></div>
+        <div class="box3"><h5 class="h5">Web Design</h5></div>
+        <div class="box4"><h5 class="h5">SEO Ranking</h5></div></div>
+    </div>
+
+<!-- project section -->
+   
+<div class="projects" id="Projects">
+    <h1 class="projects-h1">Projects</h1>
+</div>
+ 
+
+<!-- contact section -->
+   
+<div class="contact" id="Contact">
+    <h1 class="contact-h1">Contact</h1>
+    <h5 class="contact-h5">GET IN TOUCH</h5>
+    <input type="text" class="text1" placeholder="Enter your name"><br>
+    <input type="email" class="email" placeholder="Enter your email"><br>
+    <input type="number" class="number" placeholder="Mobile number"><br>
+    <input type="text" class="text2" placeholder="Write a message"><br>
+    <button class="send_button"><b>SEND MESSAGE</b></button>
+</div>
+
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* home section ----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.home{
+    position: relative;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    background-color: rgb(248, 248, 248);
+    float: left;
+}
+.ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.left .nav .navlist{
+    color: #000000;
+}
+.navlist{
+    display: inline-block;
+    margin: 33px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.left .navlist:hover{
+    color: #ffbf35;
+}
+.nav{
+    margin-left: 560px;
+
+
+}
+
+.left .text-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    text-align: left;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    /* margin-top: 300px;
+    margin-right: 150px; */
+}
+.left .hello{
+font-size: 35px;
+color: rgb(108, 110, 111);
+}
+
+.left .h1{
+    font-size: 93px;
+    color: #ffab04;
+}
+.left .h6{
+font-size: 44px;
+color: rgb(74, 72, 72);
+
+
+}
+.left .btn{
+    height: 62px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 2px solid #ffbf35;
+    color: rgb(255, 196, 0);
+    margin-top: 30px;
+
+}
+.left .btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffbf35;
+    transition: 0.8s;
+    
+}
+.right{
+    display: flex;
+    height: 100vh;
+    width: 35%;
+    background-color:#ffbf35;
+    float: left;
+}
+
+
+.div1,
+.div2 {
+    /* styles for div 1 and div 2 */
+    width: 50%; /* Adjust this width as needed */
+    
+}
+
+.overlay-image {
+    position: absolute;
+    top: 44px;
+    left: 840px;
+    width: 830px;
+    height: 900px;
+   
+}
+
+/* about section -----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.about{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+.about .about-img{
+    height: 500px;
+    width: 465px;
+    border: 15px solid #ffbf35;
+    margin-top: 120px;
+    margin-left: 250px;
+    position: absolute;
+}
+.about-h1{
+    display: flex;
+    margin-top: 220px;
+    margin-left: 800px;
+    font-size: 57px;
+}
+.about-p{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 800px;
+    font-size: 17px;
+    color: rgb(108, 110, 111);
+}
+.about .CV-btn{
+    height: 62px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: 2px solid #ffbf35;
+    color: rgb(255, 196, 0);
+    margin-top: 60px;
+    margin-left: 800px;
+
+}
+
+.about .CV-btn:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffbf35;
+    transition: 0.8s;
+}
+
+
+/* service section -------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.services{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+.services-h1{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 250px;
+    font-size: 57px;
+}
+
+.services .box1{
+    display: flex;
+    height: 300px;
+    width: 630px;
+    background-color: rgb(125, 216, 255);
+    float: left;
+    margin-top: 45px;
+    margin-left: 250px;
+    border-radius: 10px;
+}
+.services .box2{
+    display: flex;
+    height: 300px;
+    width:630px;
+    background-color: rgb(254, 231, 79);
+    float: left;
+    margin-top: 45px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+.services .box3{
+    display: flex;
+    height: 300px;
+    width: 630px;
+    background-color: rgb(249, 138, 255);
+    float: left;
+    margin-top: 90px;
+    margin-left: 250px;
+    border-radius: 10px;
+}
+.services .box4{
+    display: flex;
+    height: 300px;
+    width:630px;
+    background-color: rgb(66, 255, 144);
+    float: left;
+    margin-top: 90px;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+.h5{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   margin-top: 120px;
+    font-size: 50px;
+    color: aliceblue;
+
+}
+
+/* project section ---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.projects{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.projects .projects-h1{
+    font-size: 57px;
+    margin-left: 250px;
+    margin-top: px;
+}
+
+/* contact section  --------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+.contact .contact-h1{
+    font-size: 57px;
+    margin-left: 250px;
+    margin-top: px;
+}
+.contact .contact-h5{
+    font-size: 30px;
+    color: #ffbf35;
+    margin-left: 860px;
+    margin-top: 80px;
+}
+.contact .text1{
+height: 50px;
+width: 800px;
+margin-left: 555px;
+margin-top: 100px;
+}
+
+
+.contact .email{
+height: 50px;
+width: 800px;
+margin-left: 555px;
+margin-top: 40px;
+}
+.contact .number{
+ height: 50px;
+ width: 800px;
+ margin-left: 555px;
+ margin-top: 40px;
+}
+
+.contact .text2{
+height: 210px;
+width: 800px;
+margin-left: 555px;
+margin-top: 40px;
+
+}
+
+.contact .send_button{
+height: 40px;
+width: 150px;
+background-color: rgb(255, 255, 255);
+border-radius: 8px;
+border: 2px solid #ffbf35;
+color: rgb(255, 196, 0);
+margin-top: 60px;
+margin-left: 880px;
+}
+.contact .send_button:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffbf35;
+    transition: 0.8s;
+}
+
+</style>
+
